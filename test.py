@@ -1,6 +1,5 @@
-from pyjnius import autoclass
+import subprocess
 
-activity = autoclass('org.kivy.android.PythonActivity').mActivity
-wifi_info = activity.getSystemService(activity.WIFI_SERVICE).getConnectionInfo()
-signal_strength = wifi_info.getRssi()
+output = subprocess.check_output(['termux-wifi-scaninfo'])
+signal_strength = int(output.split()[7])
 print(signal_strength)
