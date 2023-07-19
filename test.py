@@ -1,5 +1,7 @@
-from playsound import playsound
-from threading import Thread
-
-t = Thread(target=playsound, args=("sound.mp3",))
-t.start()
+import pygame
+file = 'sound.mp3'
+pygame.init()
+pygame.mixer.init()
+pygame.mixer.music.load(file)
+pygame.mixer.music.play()
+pygame.event.wait()
